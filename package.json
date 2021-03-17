@@ -1,13 +1,10 @@
 {
-  "devDependencies": {
-    "@0x/abi-gen": "^5.4.21"
-  },
   "name": "ts-abis",
   "description": "This repo contains all common ABIs and generated typescript interfaces used with all our projects.",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "build": "node node_modules/@0x/abi-gen/bin/abi-gen.js --abis 'json/*.json' --network-id 56 --backend ethers --out ts/ --template 'template/contract.handlebars' --partials 'template/partials/*' && tsc"
+    "build": "typechain --target 'node_modules/@typechain/ethers-v5' --outDir ts 'json/*.json' && tsc"
   },
   "keywords": [
     "ethereum",
@@ -17,13 +14,7 @@
   "author": "@CryptoKass",
   "license": "ISC",
   "dependencies": {
-    "@0x/assert": "^3.0.21",
-    "@0x/base-contract": "^6.2.18",
-    "@0x/json-schemas": "^5.4.1",
-    "@0x/types": "^3.3.1",
-    "@0x/utils": "^6.2.0",
-    "@0x/web3-wrapper": "^7.4.1",
-    "ethereum-types": "^3.4.0",
-    "ethers": "^4.0.48"
+    "@typechain/ethers-v5": "^6.0.4",
+    "typechain": "^4.0.3"
   }
 }
