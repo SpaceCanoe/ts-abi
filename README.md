@@ -1,10 +1,14 @@
-# 📒 ABIS 
+# 📒 TS-ABIS 
 
-This repo contains all common ABIs and generated typescript interfaces used with all our projects.
+This repo contains common ABIs and their generated typescript interfaces. ABIs are generated with 0x/abi-gen
 
-## Installation
+## Getting Started
 
-1. Clone the Repo `git clone https://github.com/SpaceWind/abis`
+Install with NPM: `npm install --save git+https://github.com/SpaceCanoe/ts-abi`
+
+## Development:
+
+1. Clone the Repo `git clone https://github.com/SpaceCanoe/ts-abi`
 2. Install `cd abis && npm install`
 
 ## Generating Typescript classes for ABIs:
