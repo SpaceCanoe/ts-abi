@@ -7,7 +7,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "build": "node node_modules/@0x/abi-gen/bin/abi-gen.js --abis 'json/*.json' --network-id 56 --backend ethers --out ts/ --template 'template/contract.handlebars' --partials 'template/partials/*'"
+    "build": "node node_modules/@0x/abi-gen/bin/abi-gen.js --abis 'json/*.json' --network-id 56 --backend ethers --out ts/ --template 'template/contract.handlebars' --partials 'template/partials/*' && tsc"
   },
   "keywords": [
     "ethereum",
