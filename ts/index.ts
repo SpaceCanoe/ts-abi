@@ -2,9 +2,11 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { ERC20 } from "./ERC20";
+export type { ERC20LP } from "./ERC20LP";
 export type { PancakeMasterChef } from "./PancakeMasterChef";
 export type { UniswapV2Router } from "./UniswapV2Router";
 
 export { ERC20__factory } from "./factories/ERC20__factory";
+export { ERC20LP__factory } from "./factories/ERC20LP__factory";
 export { PancakeMasterChef__factory } from "./factories/PancakeMasterChef__factory";
 export { UniswapV2Router__factory } from "./factories/UniswapV2Router__factory";
